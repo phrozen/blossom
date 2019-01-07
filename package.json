@@ -1,0 +1,28 @@
+{
+  "name": "blossom",
+  "version": "0.0.1",
+  "description": "A minimal classless css import with great taste.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass sass -o css & node-sass sass/blossom.sass css/blossom.min.css --output-style compressed",
+    "watch-css": "node-sass -w sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phrozen/blossom.git"
+  },
+  "keywords": [
+    "css",
+    "minimal",
+    "design"
+  ],
+  "author": "Guillermo Estrada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phrozen/blossom/issues"
+  },
+  "homepage": "https://github.com/phrozen/blossom#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
