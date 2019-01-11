@@ -86,21 +86,21 @@ body {
   max-width: 960px;
   color: #111111;
   background-color: #FFFFFF; }
-  @media all and (min-width: 1440px) {
+  @media screen and (min-width: 1440px) {
     body {
       font-size: 2rem; } }
-  @media all and (max-width: 1360px) {
+  @media screen and (max-width: 1360px) {
     body {
       font-size: 1.76rem; } }
-  @media all and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     body {
       font-size: 1.6rem; } }
-  @media all and (max-width: 640px) {
+  @media screen and (max-width: 640px) {
+    body {
+      font-size: 1.44rem; } }
+  @media screen and (max-width: 480px) {
     body {
       font-size: 1.36rem; } }
-  @media all and (max-width: 480px) {
-    body {
-      font-size: 1.2rem; } }
 
 hr {
   border: 0;
@@ -109,8 +109,8 @@ hr {
   background-color: #FF4136; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.15;
-  margin: 1rem 0;
+  line-height: 1.0;
+  margin: 0.75em 0;
   font-weight: 700;
   font-family: "Raleway", sans-serif; }
 
@@ -134,7 +134,7 @@ h6 {
 
 p {
   line-height: 1.15;
-  margin: 0.5rem 0; }
+  margin: 1em 0; }
 
 a {
   text-decoration: none;
@@ -147,16 +147,17 @@ a {
 img {
   max-width: 100%; }
 
-p code, li code, a code {
-  padding: 0 0.5rem;
-  font-size: 2rem;
+code {
+  font-family: "Source Code Pro", monospace;
+  background-color: #f2f2f2; }
+
+p code, li code, a code, blockquote code, h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  padding: 0 0.5em;
   background-color: #f2f2f2;
   border: none; }
 
 pre code {
-  font-family: "Source Code Pro", monospace;
-  background-color: #e6e6e6;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #f2f2f2;
   border-radius: 8px; }
 
 ul, ol {
@@ -165,3 +166,8 @@ ul, ol {
   ul li, ol li {
     margin-left: 0.5em;
     list-style-type: disc; }
+
+blockquote {
+  padding: 1.5em;
+  border-left: 0.5rem solid #FF4136;
+  background-color: #e6e6e6; }

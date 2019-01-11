@@ -8,7 +8,7 @@
     "build-min-css": "node-sass sass/blossom.sass css/blossom.min.css --output-style",
     "build-css": "node-sass sass -o css",
     "build": "npm run build-css & npm run build-min-css & npm run copy-docs",
-    "watch-dev": "node-sass -w sass/blossom.sass css/blossom.min.css --output-style",
+    "watch-dev": "node-sass -w sass/blossom.sass docs/blossom.min.css --output-style",
     "watch": "node-sass -w sass -o css"
   },
   "repository": {

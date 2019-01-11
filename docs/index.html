@@ -22,8 +22,10 @@
  
 </head>
 <body>
-    <div style="position: fixed; right: 0; top: 0">
-        <button onclick="document.styleSheets[0].disabled = !document.styleSheets[0].disabled">Toggle blossom</button>
+    <div style="position: relative">
+        <div style="position: fixed; left: 0; top: 0">
+            <button style="margin: 0; padding: 0;" onclick="document.styleSheets[0].disabled = !document.styleSheets[0].disabled">Toggle blossom</button>
+        </div>
     </div>
     <header>
         <h1>blossom</h1>
@@ -34,6 +36,9 @@
     <nav>
         <h3>Menu</h3>
         <ul>
+            <li>Typography</li>
+            <li>Code</li>
+            <li>Images</li>
             <li>Typography</li>
         </ul>
     </nav>
@@ -75,12 +80,15 @@
     }
             </code>
         </pre>
-    <h3>Images</h3>
+    <h3 id="images">Images</h3>
     <p>Images are responsive by default. The next one is a very large image (2000px by 1333px).</p>
     <img src="cherry-blossom.jpg">
     <h3>Forms</h3>
 
-    <h3></h3>
+    <h3>Blockquote</h3>
+    <blockquote>
+        This is a <code>blockquote</code> tag.
+    </blockquote>
     </main>
     <footer>
         <h1>Footer tag</h1>
