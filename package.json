@@ -4,10 +4,12 @@
   "description": "A minimal classless css import with great taste.",
   "main": "index.js",
   "scripts": {
-    "copy-css": "cp css/blossom.min.css docs",
+    "copy-docs": "cp css/blossom.min.css docs  && cp css/test.html docs/index.html",
     "build-min-css": "node-sass sass/blossom.sass css/blossom.min.css --output-style",
-    "build-css": "node-sass sass -o css & npm run build-min-css & npm run copy-css",
-    "watch-css": "node-sass -w sass -o css"
+    "build-css": "node-sass sass -o css",
+    "build": "npm run build-css & npm run build-min-css & npm run copy-docs",
+    "watch-dev": "node-sass -w sass/blossom.sass css/blossom.min.css --output-style",
+    "watch": "node-sass -w sass -o css"
   },
   "repository": {
     "type": "git",

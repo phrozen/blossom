@@ -1,9 +1,85 @@
 html
-    width: 100%
+    font-size: 62.5% // So that root size becomes 10px
+    font-family: $font-family-text
 
 body
-    max-width: 960px
-    padding: 10px 32px
+    font-size: $font-size-base
     margin: 0 auto
-    color: #666
-    font-family: $font-family
+    padding: 0 1rem
+    max-width: $body-max-width
+    color: $foreground
+    background-color: $background
+    @media all and (min-width: $xl)
+        font-size: $font-size-base * 1.25
+    @media all and (max-width: $lg)
+        font-size: $font-size-base * 1.1
+    @media all and (max-width: $md)
+        font-size: $font-size-base * 1.0 // default - reset
+    @media all and (max-width: $sm)
+        font-size: $font-size-base * 0.85
+    @media all and (max-width: $xs)
+        font-size: $font-size-base * 0.75
+
+hr
+    border: 0
+    height: 1px
+    margin: 25px auto
+    background-color: $accent
+    
+h1, h2, h3, h4, h5, h6
+    line-height: 1.15
+    margin: 1rem 0
+    font-weight: 700
+    font-family: $font-family-title
+
+h1
+    font-size: 2.5em
+h2
+    font-size: 2.25em
+h3
+    font-size: 2.0em
+h4 
+    font-size: 1.75em
+h5
+    font-size: 1.5em 
+h6
+    font-size: 1.25em
+
+p
+    line-height: 1.15
+    margin: 0.5rem 0
+
+a
+    text-decoration: none
+    color: $accent
+    transition-duration: $transition-duration
+    transition-property: color
+    &:hover
+        color: $alter
+
+img
+    max-width: 100%
+
+// Inline Code
+p, li, a
+    code
+        padding: 0 0.5rem
+        font-size: 2rem
+        background-color: darken($background, 5%)
+        border: none
+// Block Code
+pre
+    code
+        font-family: $font-family-code
+        background-color: darken($background, 10%)
+        border: 1px solid darken($background, 10%)
+        border-radius: 8px // Same as hljs padding
+
+ul, ol
+    padding: 0.5em 1em
+    margin: 0.5em 0
+    li
+        margin-left: 0.5em
+        list-style-type: disc
+
+// Blockquote
